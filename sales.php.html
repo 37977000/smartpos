@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Search</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Optional: Add custom CSS for better alignment */
+    .form-container {
+      display: flex;
+      gap: 10px; /* Space between elements */
+      align-items: center; /* Vertically center elements */
+    }
+    .form-container .form-control {
+      flex: 1; /* Allow input boxes to grow and fill space */
+    }
+    .table-container {
+      margin-top: 20px; /* Add space between the form and the table */
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-3">
+    <!-- Form Container -->
+    <div class="form-container">
+      <!-- Category Input -->
+      <input type="text" class="form-control" id="category" name="category" placeholder="Enter category">
+
+      <!-- Product Name Input -->
+      <input type="text" class="form-control" id="productName" name="product_name" placeholder="Enter product name">
+
+      <!-- Search Button -->
+      <button type="submit" class="btn btn-success" name="search">Search</button>
+
+      <!-- View All Button -->
+      <button type="submit" class="btn btn-info" name="view_all">View All</button>
+
+      <!-- View Cart Button -->
+      <button type="submit" class="btn btn-warning" name="view_cart">View Cart</button>
+    </div>
+
+    <!-- Table Container -->
+    <div class="table-container">
+      <table class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Item Name</th>
+            <th>Quantity Available</th>
+            <th>Selling Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example Row 1 -->
+          <tr>
+            <td>Laptop</td>
+            <td>10</td>
+            <td>$600.00</td>
+            <td>
+              <button class="btn btn-success btn-sm">Add to Cart</button>
+            </td>
+          </tr>
+          <!-- Example Row 2 -->
+          <tr>
+            <td>Smartphone</td>
+            <td>20</td>
+            <td>$400.00</td>
+            <td>
+              <button class="btn btn-success btn-sm">Add to Cart</button>
+            </td>
+          </tr>
+          <!-- Example Row 3 -->
+          <tr>
+            <td>Tablet</td>
+            <td>15</td>
+            <td>$300.00</td>
+            <td>
+              <button class="btn btn-success btn-sm">Add to Cart</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS (Optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
